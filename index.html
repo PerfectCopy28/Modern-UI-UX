@@ -16,9 +16,8 @@
 		<link rel="stylesheet" href="output.css">
 </head>
 <body>
-
-    <!--~~~~~~~~~~ HEADER ~~~~~~~~~~-->
-    <header>
+    <!--~~~~~~~~~~ header ~~~~~~~~~~-->
+    <header class="sticky top-0 z-50">
 			<nav class="container flex justify-between items-center">
 				<div class="py-5 text-color-secondary font-bold text-3xl">
 					<a href="home">
@@ -62,14 +61,14 @@
 				 </div>
 			</nav>
     </header>
-    <!--~~~~~~~~~~ MAIN ~~~~~~~~~~-->
+    <!--~~~~~~~~~~ main ~~~~~~~~~~-->
     <main>
-        <!--~~~~~~~~~~ HOME ~~~~~~~~~~-->
-        <section id="home" class="relative">
+        <!--~~~~~~~~~~ home ~~~~~~~~~~-->
+        <section id="home" class="relative container">
 
 					<<div class="buble1"></div>
 					<div class="buble2"></div>
-						<div class="flex flex-col items-center z-20 md:flex-row">
+						<div class="home-text flex flex-col items-center z-20 md:flex-row">
 							<div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
 								<h1 class="title mb-4">Awesome App for Your Financial.</h1>
 								<p class="leading-relaxed mb-10">This should be used to tell a story and let your users know a little more about app and it’s use, How can benefit them.</p>
@@ -83,15 +82,15 @@
 						</div>
 					</div>
         </section>
-        <!--~~~~~~~~~~ FEATURES ~~~~~~~~~~=-->
+        <!--~~~~~~~~~~ features ~~~~~~~~~~=-->
         <section id="features" class="bg-color-primary-light">
            <div class="container py-20">
-						<div class="text-center m-auto mb-20 md:w-1/2">
+						<div class="features-atas text-center m-auto mb-20 md:w-1/2">
 							<h4 class="font-bold text-color-secondary mb-4">Our Future</h4>
 							<h1 class="title">Easy To Manage Your All Payments By Our App</h1>
 						</div>
 
-						<div class="grid lg:grid-cols-3 md:grid-cols-2 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-8">
+						<div class="features-bawah grid lg:grid-cols-3 md:grid-cols-2 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-8">
 							<!-- card 1 -->
 							 <div class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-300">
 								<div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
@@ -119,16 +118,16 @@
 						</div>
 					 </div>
         </section>
-        <!--~~~~~~~~~~ SAVING MONEY ~~~~~~~~~~-->
+        <!--~~~~~~~~~~ saving-money ~~~~~~~~~~-->
         <section id="saving-money">
           <div class="container py-20 relative">
 						<div class="buble1"></div>
 						<div class="buble2"></div>
-						<div class="flex flex-col items-center justify-between md:flex-row">
+						<div class="money flex flex-col items-center justify-between md:flex-row">
 							<div class="mb-12 md:w-1/2">
 								<img src="img/hero3.png" alt="">
 							</div>
-							<div class="text-center md:text-left md:w-1/2 md:ml-20">
+							<div class="money-conten text-center md:text-left md:w-1/2 md:ml-20">
 								<h4 class="font-bold text-color-secondary mb-4">Saving Money</h4>
 								<h1 class="title mb-4">Best Financing App To Save Your Money</h1>
 								<p class="leading-relaxed">Best financing app ever in the world. Easy to use and very user friendly for mobile banking. You can control your card easily and send money some one just one click.</p>
@@ -140,12 +139,12 @@
         <!--~~~~~~~~~~ HOW-IT-WORKS ~~~~~~~~~~-->
         <section id="how-it-works">
           <div class="container py-20">
-						<div class="text-center m-auto mb-20 md:w-1/2">
+						<div class="works-atas text-center m-auto mb-20 md:w-1/2">
 							<h4 class="font-bold text-color-secondary mb-4">How It Works</h4>
 							<h1 class="title">Grow Up Your Money Saving</h1>
 						</div>
 
-						<div class="flex flex-col items-center justify-between space-y-6 md:flex-row md:space-y-0 md:space-x-6">
+						<div class="works-bawah flex flex-col items-center justify-between space-y-6 md:flex-row md:space-y-0 md:space-x-6">
 							<!-- card 1 -->
 							 <div class="text-center cursor-pointer">
 								<div class="relative bg-color-primary-dark inline-block px-6 py-3 rounded-lg cursor-pointer hover:bg-color-secondary ease-in">
@@ -173,17 +172,17 @@
 						</div>
 					</div>
         </section>
-        <!--~~~~~~~~~~ TESTIMONIAL ~~~~~~~~~~-->
+        <!--~~~~~~~~~~ testimonial ~~~~~~~~~~-->
         <section id="testimonial">
 					<div class="container py-20">
-						<div class="text-center m-auto mb-20 md:w-1/2">
+						<div class="testimonial-atas text-center m-auto mb-20 md:w-1/2">
 							<h4 class="font-bold text-color-secondary mb-4">User Review</h4>
 							<h1 class="title">What Clients Say About Our App After Use I</h1>
 						</div>
 
 						<!-- review container  -->
 						 <div class="mt-8">
-							<div class="flex items-center justify-center flex-wrap">
+							<div class="testimonial-review flex items-center justify-center flex-wrap">
 								<img src="img/user1.jpg" alt="" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic active-pic" onclick="showReview()">
 								<img src="img/user2.jpg" alt="" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic" onclick="showReview()">
 								<img src="img/user3.jpg" alt="" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic" onclick="showReview()">
@@ -191,7 +190,7 @@
 								<img src="img/user5.jpg" alt="" class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic" onclick="showReview()">
 							</div>
 
-							<div class="grid place-items-center text-center m-auto md:w-4/5 min-h-[40vh]">
+							<div class="testimonial-bawah grid place-items-center text-center m-auto md:w-4/5 min-h-[40vh]">
 								<div class="user-text active-text">
 									<p class="md:text-2xl mb-6">"This should be used to tell a story and include any testimonials you might have about your product or service for your clients"!</p>
 									<h4 class="font-bold text-color-secondary mb-1">Markin Nesus</h4>
@@ -222,14 +221,14 @@
 						 </div>
 					</div>
         </section>
-        <!--~~~~~~~~~~ PRICING ~~~~~~~~~~-->
+        <!--~~~~~~~~~~ pricing ~~~~~~~~~~-->
         <section id="pricing" class="bg-color-primary-light">
 					<div class="container py-20">
-						<div class="text-center m-auto mb-20 md:w-1/2">
+						<div class="pricing-atas text-center m-auto mb-20 md:w-1/2">
 							<h4 class="font-bold text-color-secondary mb-4">Pricing</h4>
 							<h1 class="title">Get In Reasonable Price</h1>
 							<!-- rounded switch -->
-							<div class="mt-5 flex items-center justify-center gap-4">
+							<div class="pricing-tombol mt-5 flex items-center justify-center gap-4">
 								<p>Bill Monthly</p>
 								<label class="relative inline-block w-20 h-8 rounded-full">
 										<input type="checkbox" id="toggleBtn" class="peer opacity-0 w-0 h-0">
@@ -243,7 +242,7 @@
 
 						<div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
 							<!-- card 1 -->
-							 <div class="card relative h-auto w-auto">
+							 <div class="card-1 card relative h-auto w-auto">
 								<!-- tanpak depan -->
 								 <div id="card_1_front" class="front px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full">
 									<div class="relative">
@@ -318,7 +317,7 @@
 								 </div>
 							 </div>
 							<!-- card 2 -->
-							 <div class="card relative h-auto w-auto">
+							 <div class="card-2 card relative h-auto w-auto">
 								<!-- tanpak depan -->
 								 <div id="card_2_front" class="front px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full">
 									<div class="relative">
@@ -393,7 +392,7 @@
 								 </div>
 							 </div>
 							<!-- card 3 -->
-							 <div class="card relative h-auto w-auto">
+							 <div class="card-3 card relative h-auto w-auto">
 								<!-- tanpak depan -->
 								 <div id="card_3_front" class="front px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full">
 									<div class="relative">
@@ -470,21 +469,21 @@
 						</div>
 					</div>
         </section>
-        <!--~~~~~~~~~~ BLOG ~~~~~~~~~~-->
+        <!--~~~~~~~~~~ blog ~~~~~~~~~~-->
         <section id="blog">
 					<div class="container">
-						<div class="text-center m-auto mb-20 md:w-1/2">
+						<div class="blog-atas text-center m-auto mb-20 md:w-1/2">
 							<h4 class="font-bold text-color-secondary mb-4">Innovation And Quality Improvement</h4>
 							<h1 class="title">Latest Updates, Solutions And Company News</h1>
 						</div>
-						<div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+						<div class="blog-bawah grid gap-5 md:grid-cols-2 lg:grid-cols-3">
 							<!-- card no1 -->
 							 <div>
 								<div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
 									<img src="img/blog1.jpg" alt="" class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out">
 								</div>
 
-								<div>
+								<div class="blog-text">
 									<div class="flex items-center gap-5 py-5">
 										<p>20 August 2022</p>
 										<p>1 min read</p>
@@ -497,7 +496,7 @@
 								</div>
 							 </div>
 							 <!-- card no2 -->
-							 <div>
+							 <div class="blog-text"> 
 								<div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
 									<img src="img/blog2.jpg" alt="" class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out">
 								</div>
@@ -515,7 +514,7 @@
 								</div>
 							 </div>
 							 <!-- card no3 -->
-							 <div>
+							 <div class="blog-text">
 								<div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
 									<img src="img/blog3.jpg" alt="" class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out">
 								</div>
@@ -535,7 +534,7 @@
 						</div>
 					</div>
         </section>
-        <!--~~~~~~~~~~ DOWNLOAD-APP ~~~~~~~~~~-->
+        <!--~~~~~~~~~~ download-app ~~~~~~~~~~-->
         <section id="download-app" class="bg-color-primary-light">
 					<div class="container h-[80vh] grid place-items-center">
 						<div class="text-center md:w-2/3 m-auto">
@@ -553,7 +552,7 @@
 						</div>
 					</div>
         </section>
-        <!--~~~~~~~~~~ CONTACT ~~~~~~~~~~-->
+        <!--~~~~~~~~~~ contact ~~~~~~~~~~-->
         <section id="contact">
 					<div class="container py-20">
 						<div class="text-center m-auto mb-20 md:w-1/2">
@@ -577,7 +576,7 @@
 						</form>
 					</div>
         </section>
-        <!--~~~~~~~~~~ CONTACT ~~~~~~~~~~-->
+        <!--~~~~~~~~~~ footer ~~~~~~~~~~-->
         <section id="footer">
            <div class="bg-color-primary-dark">
 						<div class="container py-10">
@@ -587,19 +586,60 @@
 									<p class="leading-relaxed">This Should Be Used To Tell A Story And Include Any Testimonials You Might Have About Your Product Or Service For Your Clients</p>
 									<div class="flex gap-5 items-center">
 										<p>Follow Us</p>
-										<i class="fa-brands fa-facebook-f"></i>
+										<i class="fa-brands fa-facebook-f cursor-pointer hover:text-color-secondary"></i>
+										<i class="fa-brands fa-twitter cursor-pointer hover:text-color-secondary"></i>
+										<i class="fa-brands fa-youtube cursor-pointer hover:text-color-secondary"></i>
+										<i class="fa-brands fa-instagram cursor-pointer hover:text-color-secondary"></i>
 									</div>
 								</div>
-								<div></div>
-								<div></div>
-								<div></div>
+								<div class="flex justify-between md:justify-around">
+									<div class="space-y-6">
+										<h4 class="font-bold text-lg">Quick Links</h4>
+										<ul class="space-y-3 capitalize">
+											<li class="underline hover:no-underline hover:text-color-secondary"><a href="#">Home</a></li>
+											<li class="underline hover:no-underline hover:text-color-secondary"><a href="#features">features</a></li>
+											<li class="underline hover:no-underline hover:text-color-secondary"><a href="#testimonial">testimonial</a></li>
+											<li class="underline hover:no-underline hover:text-color-secondary"><a href="#pricing">pricing</a></li>
+											<li class="underline hover:no-underline hover:text-color-secondary"><a href="#blog">blog</a></li>
+											<li class="underline hover:no-underline hover:text-color-secondary"><a href="#contact">contact</a></li>
+										</ul>
+									</div>
+									<div class="space-y-6">
+										<h4 class="font-bold text-lg">Help</h4>
+										<ul class="space-y-3 capitalize">
+											<li class="underline hover:no-underline hover:text-color-secondary"><a href="#">About Us</a></li>
+											<li class="underline hover:no-underline hover:text-color-secondary"><a href="#features">Partners</a></li>
+											<li class="underline hover:no-underline hover:text-color-secondary"><a href="#testimonial">Career</a></li>
+											<li class="underline hover:no-underline hover:text-color-secondary"><a href="#pricing">Reviews</a></li>
+											<li class="underline hover:no-underline hover:text-color-secondary"><a href="#blog">Terms & Conditions</a></li>
+											<li class="underline hover:no-underline hover:text-color-secondary"><a href="#contact">Help</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="space-y-6">
+									<h4 class="font-bold text-lg">Newsletter</h4>
+									<p class="leading-relaxed">Subscribe With Email And Loads Of News Will Be Sent To You</p>
+									<div class="flex items-center">
+										<input type="text" class="w-3/4 to-color-gray bg-color-white p-2 lg:p-rounder-1-md focus:outline-none" placeholder="Enter Your Email">
+										<button type="submit" class="bg-color-secondary px-4 py-2 lg:px-5 lg:py-3 rounded-r-md hover:opacity-90">
+											<i class="fa-solid fa-chevron-right"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="flex justify-center pt-10 border-t border-color-gray">
+								<p>2023 &copy; Candra. All Rights Reserved.</p>
 							</div>
 						</div>
 					 </div>
         </section>
     </main>
 
+    <!--~~~~~~~~~~ scrollRaveal ~~~~~~~~~~-->
+		<script src="https://unpkg.com/scrollreveal"></script>
     <!--~~~~~~~~~~ JS ~~~~~~~~~~-->
+		<script src="scrollRaveal/script.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,3 +1,15 @@
+const navbar = document.querySelector('header');
+window.onscroll = () => {
+	if(window.scrollY > 100) {
+		navbar.classList.add('bg-color-primary-dark');
+		navbar.classList.add('border-b');
+		navbar.classList.add('bg-color-gray');
+	} else{
+		navbar.classList.remove('bg-color-primary-dark');
+		navbar.classList.remove('border-b');
+		navbar.classList.remove('bg-color-gray');
+	}
+}
 /*---------- Mobile menu ----------*/
 const hamburger = document.getElementById('hamburger');
 const menu = document.getElementById('menu');
